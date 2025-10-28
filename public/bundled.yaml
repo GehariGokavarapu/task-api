@@ -122,7 +122,7 @@ components:
           schema:
             $ref: '#/components/schemas/ValidationError'
     NotFound:
-      description: Resource not found
+      description: ID not found
       content:
         application/json:
           schema:

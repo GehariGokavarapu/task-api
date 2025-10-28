@@ -11,6 +11,7 @@ export async function create(data) {
 }
 
 export async function findById(id) {
-  const task = await db('tasks').where({ id }).first();
-  return task || null;
+  return prisma.task.findUnique({
+    where: {id},
+  })
 }
